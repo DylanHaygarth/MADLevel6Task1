@@ -1,4 +1,4 @@
-package com.example.madlevel6task1
+package com.example.madlevel6task1.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,9 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.madlevel6task1.model.ColorItem
+import com.example.madlevel6task1.viewmodel.ColorViewModel
+import com.example.madlevel6task1.R
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_color.*
 
@@ -34,7 +37,8 @@ class ColorFragment : Fragment() {
     }
 
     private fun initViews () {
-        colorAdapter = ColorAdapter(colors, ::onColorClick)
+        colorAdapter =
+            ColorAdapter(colors, ::onColorClick)
         rvColors.layoutManager = LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
         rvColors.adapter = colorAdapter
 

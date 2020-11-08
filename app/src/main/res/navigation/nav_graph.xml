@@ -6,7 +6,7 @@
     app:startDestination="@id/colorFragment">
     <fragment
         android:id="@+id/colorFragment"
-        android:name="com.example.madlevel6task1.ColorFragment"
+        android:name="com.example.madlevel6task1.ui.ColorFragment"
         android:label="fragment_color"
         tools:layout="@layout/fragment_color" />
 </navigation>
