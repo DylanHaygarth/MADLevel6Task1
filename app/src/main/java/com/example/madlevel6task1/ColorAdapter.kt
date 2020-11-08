@@ -15,7 +15,7 @@ class ColorAdapter(private val colors: List<ColorItem>, private val onClick: (Co
         init {
             itemView.setOnClickListener { onClick(colors[adapterPosition]) }
         }
-        
+
         fun bind(colorItem: ColorItem) {
             Glide.with(context).load(colorItem.getImageUrl()).into(itemView.ivColor)
         }
